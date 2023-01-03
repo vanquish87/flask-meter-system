@@ -1,0 +1,5 @@
+<ul>
+    {% for meter in meters %}
+        <li><a href="{{ url_for('get_meter_data', meter_id=meter.id) }}">{{ meter.label }}</a></li>
+    {% endfor %}
+    </ul>
